@@ -1,0 +1,354 @@
+/******************************************/
+/*                    COLORS             */
+/*****************************************/
+
+$light-grey: #b0b0b0;
+$dove-grey: #717171;
+$persimmon-dark: #df3c47;
+$persimmon: #ff5a5f;
+$mineshaft: #222222;
+$shadow-black: #00000024;
+$shadow-black-100: #00000026;
+$shadow-black-200: #00000029;
+$shadow-black-300: #0000001f;
+$shadow-black-light: #0000001a;
+$shadow-black-lighter: #00000005;
+$shadow-grey: #f7f7f7;
+$teal: #008489;
+$transparent: transparent;
+$cannon-pink: #914669;
+$tundora: #484848;
+$mercury: #e2e2e2;
+$boulder: #767676;
+$gallery: #ebebeb;
+$sorrell-brown: #c6af86;
+$can-can: #d88ab7;
+
+/******************************************/
+/*                    UTILS               */
+/*****************************************/
+
+$small-border-radius: 3px;
+$medium-border-radius: 4px;
+$large-border-radius: 8px;
+$xlarge-border-radius: 12px;
+
+$featured-color: $cannon-pink;
+
+/******************************************/
+/*                    BUTTONS             */
+/*****************************************/
+
+/* Button white */
+$btn-white-bgcolor: $mercury;
+$btn-white-color: $tundora;
+$btn-white-shadow: $shadow-black;
+
+/* Button Search */
+$btn-persimmon-active-bgcolor: $persimmon-dark;
+$btn-persimmon-bgcolor: $persimmon;
+
+/* Button Filter */
+$btn-filter-active-bgcolor: $black;
+$btn-filter-active-color: $white;
+$btn-filter-bordercolor: $light-grey;
+$btn-filter-hover-bgcolor: $black;
+$btn-filter-border-radius: 30px;
+
+/* Button Proceed ( Next - Previous ) */
+$btn-proceed-bgcolor: $gallery;
+$btn-proceed-hover-bordercolor: $black;
+$btn-proceed-shadow: $shadow-black;
+
+/* Button Transparent */
+$btn-transparent-bgcolor: $transparent;
+$btn-transparent-border-color: $light-grey;
+
+/* Button Green */
+$btn-green-active-bgcolor: $teal;
+$btn-green-active-color: $white;
+$btn-green-border-color: $teal;
+$btn-green-color: $teal;
+
+/* Button Toogle Footer */
+$btn-toogle-footer-hover-bgcolor: $shadow-grey;
+
+/* Button Search */
+$btn-search-border-radius: 8px;
+
+/******************************************/
+/*                    LINKS               */
+/*****************************************/
+$link-green-color: $teal;
+$link-green-border-color: $teal;
+
+$link-pink-color: $cannon-pink;
+$link-pink-border-color: $light-grey;
+
+/* Badge */
+$badge-new-color: $white;
+$badge-new-bgcolor: $teal;
+$badge-plus-color: $white;
+$badge-plus-bgcolor: $cannon-pink;
+
+/******************************************/
+/*              HEADINGS                  */
+/*****************************************/
+
+$h1-font-weight: 700;
+$h1-line-height: 36px;
+$h1-text-color: $tundora;
+$h1-small-screen-text-color: $white;
+
+$h3-font-weight: 700;
+$h3-line-height: 30px;
+$h3-text-color: $tundora;
+
+/******************************************/
+/*                    TEXTS               */
+/*****************************************/
+$letter-spacing-small: 1px;
+
+/******************************************/
+/*                   IMAGES            */
+/*****************************************/
+$base-svg-height: 10px;
+$base-svg-width: 10px;
+// Profile Image
+
+$profile-image-link-height: 64px;
+$profile-image-link-width: 64px;
+$profile-image-link-small-height: 48px;
+$profile-image-link-small-width: 48px;
+$profile-name-color: $boulder;
+
+$profile-img-badge-top: 30%;
+$profile-img-badge-left: 96%;
+
+$profile-img-badge-large-top: 41%;
+$profile-img-badge-large-left: 28%;
+
+/******************************************/
+/*                   PROGRESSBAR           */
+/*****************************************/
+$progress-review-bgcolor: $light-grey;
+$progress-review-bar-color: $teal;
+$progress-review-height: 4px;
+
+/******************************************/
+/*                   SEARCH BAR           */
+/*****************************************/
+$searchform-border-radius: 8px;
+$searchform-box-shadow: $shadow-black-200;
+$searchform-height: 48px;
+$searchform-max-width: 700px;
+$searchform-min-width: 500px;
+$searchform-bgcolor: $white;
+
+$searchbar-item-border-radius: 8px;
+$searchbar-item-border-color: $black;
+$searchbar-item-text-size: 14px;
+
+/******************************************/
+/*                   CARDS                */
+/*****************************************/
+
+/* Rectangle Card */
+$card-rectangle-bgcolor: $white;
+$card-rectangle-border-color: $gallery;
+$card-rectangle-border: 1px solid $card-rectangle-border-color;
+$card-rectangle-border-radius: 4px;
+$card-rectangle-box-shadow-color: $shadow-black-light;
+$card-rectangle-box-shadow: 0 2px 4px $card-rectangle-box-shadow-color;
+
+/* Explore Card */
+$card-explore-bgcolor: $white;
+$card-explore-border-color: $shadow-black-lighter;
+$card-explore-border: 1px solid $card-explore-border-color;
+$card-explore-border-radius: 12px;
+$card-explore-box-shadow-color: $shadow-black-100;
+$card-explore-box-shadow: 0 2px 8px $card-explore-box-shadow-color;
+
+// Explore Card Text
+$card-explore-text-font-size: 14px;
+$card-explore-text-font-weight: 600;
+$card-explore-text-color: $tundora;
+$card-explore-image-container-border-radius: 12px;
+
+/* Search Place Card */
+$card-placesearch-height: 48px;
+$card-placesearch-bgcolor: $white;
+$card-placesearch-border-radius: 4px;
+$card-placesearch-border: none;
+$card-placesearch-box-shadow-color: $shadow-black-300;
+$card-placesearch-box-shadow: 0 16px 40px $card-placesearch-box-shadow-color;
+$card-placesearch-padding-top: 24px;
+$card-placesearch-padding-bottom: 24px;
+
+// Search Place Card Text
+$card-placesearch-label-color: $tundora;
+$card-placesearch-label-font-size: 12px;
+$card-placesearch-label-letter-spacing: $letter-spacing-small;
+$card-placesearch-label-font-weight: 700;
+
+$card-placesearch-input-font-size: 17px;
+$card-placesearch-input-border-width: 1px;
+$card-placesearch-input-border-color: $gallery;
+$card-placesearch-input-active-border-color: $teal;
+$card-placesearch-input-border-radius: 4px;
+
+/* Place Card */
+$card-place-border-radius: $small-border-radius;
+$card-place-image-height: 300px;
+$card-place-title-color: $gallery;
+$card-place-title-font-weight: 700;
+$card-place-description-color: $gallery;
+
+/* Detailed Place Card */
+$card-detailed-place-image-radius: $large-border-radius;
+$card-detailed-place-title-color: $dove-grey;
+$card-detailed-place-title-font-size: 0.85rem;
+$card-detailed-place-description-color: $tundora;
+$card-detailed-place-description-font-weight: 600;
+
+/* Featured Card */
+$card-featured-image-radius: $xlarge-border-radius;
+$card-featured-title-color: $cannon-pink;
+$card-featured-title-font-size: 0.9rem;
+$card-featured-title-font-weight: 600;
+$card-featured-place-description-color: $tundora;
+$card-featured-place-description-font-weight: 500;
+
+$card-featured-image-caption-title-font-size: 2rem;
+$card-featured-image-caption-title-color: $white;
+$card-featured-image-caption-title-font-weight: 700;
+$card-featured-image-caption-underline-color: $sorrell-brown;
+$card-featured-image-caption-light-title-color: $black;
+$card-featured-image-caption-light-underline-color: $can-can;
+$card-featured-image-caption-plusicon-width: 70px;
+$card-featured-image-caption-plusicon-height: 36px;
+$card-featured-image-caption-title-underline-width: 200px;
+$card-featured-image-caption-title-underline-height: 15px;
+
+/* Review Card */
+$card-review-bgcolor: $white;
+$card-review-border-radius: $xlarge-border-radius;
+$card-review-border: 1px solid $white;
+$card-review-box-shadow: $shadow-black-200 0px 1px 4px 0px;
+
+/******************************************/
+/*                RATING                   */
+/*****************************************/
+$rating-icon-width: 12px;
+$rating-icon-height: 12px;
+$rating-icon-default-color: $tundora;
+$rating-text-font-size: 1rem;
+$rating-text-color: $black;
+$rating-text-font-weight: 600;
+
+/******************************************/
+/*                OVERLAY                 */
+/*****************************************/
+$overlay-bgcolor: $gallery;
+
+/******************************************/
+/*                FOOTER                 */
+/*****************************************/
+$footer-main-border-color: $gallery;
+
+/**** ------------------ PAGES ------------ */
+
+/******************************************/
+/*                   INDEX PAGE            */
+/*****************************************/
+$header-main-link-padding: 24px;
+$header-main-link-color: $white;
+$logo-main-color: $white;
+
+/* MAIN NAV */
+$nav-main-padding-left: 2.5rem;
+$nav-main-padding-top: 1rem;
+$nav-main-link-font-size: 14px;
+$nav-main-link-font-weight: 600;
+$nav-main-link-padding: 1rem;
+$nav-main-link-border: 2px solid white;
+$nav-main-link-color: $gallery;
+
+/* Section Explore */
+$section-explore-sm-height: 300px;
+$section-explore-md-height: 250px;
+$section-explore-lg-height: 130px;
+$section-explore-sm-min-width: 800px;
+
+/* Section Animals */
+$section-animals-text-font-size: 12px;
+$section-animals-text-font-weight: 700;
+$section-animals-text-line-height: 16px;
+$section-animals-text-color: $gallery;
+
+$section-animals-banner-max-width: 75%;
+$section-animals-banner-min-width: 250px;
+$section-animals-image-min-height: 450px;
+$section-animals-image-max-height: 700px;
+$section-animals-button-border-radius: 4px;
+
+/* Section Adventure */
+$section-adventure-shevron-height: 14px;
+$section-adventure-shevron-width: 14px;
+$section-adventure-shevron-color: $tundora;
+
+$section-adventure-title-color: $boulder;
+$section-adventure-title-font-weight: 700;
+$section-adventure-title-font-size: 1rem;
+
+$section-adventure-description-color: $tundora;
+$section-adventure-description-font-weight: 600;
+$section-adventure-description-font-size: 1.05rem;
+$section-adventure-description-line-height: 1.25rem;
+
+$section-adventure-subtext-color: $tundora;
+
+/* Section Place */
+$section-placetostay-banner-container-height-small: 300px;
+$section-placetostay-banner-container-height-medium: 400px;
+
+$section-placetostay-banner-header-width: 188px;
+$section-placetostay-banner-header-height: 96px;
+$section-placetostay-button-padding: 1rem 0;
+
+/* Section Stay Around World */
+$section-aroundworld-rating-icon-color: $persimmon-dark;
+
+/******************************************/
+/*                   HOMES PAGE            */
+/*****************************************/
+
+/* Header */
+
+$header-homes-nav-border-color: $light-grey;
+$header-homes-nav-border-width: 1px;
+$logo-homes-color: $persimmon;
+
+/******************************************/
+/*                   PLACE DETAIL PAGE     */
+/*****************************************/
+
+$placecapacity-title-font-size: 1.2rem;
+$placecapacity-title-color: $tundora;
+
+$place-description-title-font-size: 18px;
+$place-description-title-font-weight: 600;
+$place-description-title-color: $tundora;
+$place-description-text-font-size: 18px;
+$place-description-text-font-weight: 400;
+$place-description-text-color: $tundora;
+
+$arrangement-list-border-color: $gallery;
+$review-rating-icon-color: $teal;
+$price-check-border-color: $mercury;
+
+/* Image Carousel */
+$place-subtext-titlecolor: $dove-grey;
+$place-subtext-fontsize: 0.9rem;
+$place-subtext-icon-color: $persimmon-dark;
+$place-subtext-text-color: $mineshaft;

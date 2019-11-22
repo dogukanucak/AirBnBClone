@@ -1,0 +1,111 @@
+.btn {
+  svg {
+    height: 15px;
+    width: 15px;
+  }
+}
+.btn-white {
+  background-color: $white;
+  box-shadow: $btn-white-shadow 0px 1px 1px 1px;
+  color: $btn-white-color;
+  outline: none;
+
+  &:focus {
+    border-color: $black;
+  }
+
+  &:active {
+    background-color: $btn-white-bgcolor;
+  }
+}
+
+// Outline is still missing!!
+.btn-persimmon {
+  background-color: $btn-persimmon-bgcolor;
+  color: $white;
+
+  &:hover {
+    color: $white;
+  }
+
+  &:active {
+    background-color: $persimmon-dark;
+  }
+}
+
+.btn-filter {
+  border-color: $btn-filter-bordercolor;
+  border-radius: $btn-filter-border-radius;
+  transition: border-color 0.2s ease-in;
+
+  // Will be double border
+  &:hover {
+    border-color: $btn-filter-hover-bgcolor;
+  }
+}
+
+/* Rounded Buttons */
+.btn-proceed {
+  background-color: $btn-proceed-bgcolor;
+  box-shadow: $shadow-black 0px 1px 1px 1px;
+  svg {
+    height: 12px;
+    width: 12px;
+  }
+}
+
+.btn-transparent {
+  @extend .btn-proceed;
+  background-color: $transparent;
+  border-color: $btn-transparent-border-color;
+  svg {
+    height: 22px;
+    width: 22px;
+  }
+}
+
+.btn-green {
+  border-color: $btn-green-border-color;
+  color: $btn-green-color;
+  &:hover {
+    border: 1px solid $teal;
+    color: $btn-green-color;
+  }
+  &:active,
+  &.active {
+    background-color: $btn-green-active-bgcolor;
+    color: $btn-green-active-color;
+  }
+}
+
+.btn-toggle-footer {
+  &:hover {
+    background-color: $btn-toogle-footer-hover-bgcolor;
+  }
+}
+
+.btn-search {
+  border-radius: $btn-search-border-radius;
+  transition: transform 0.2s;
+  svg {
+    height: 1.25em;
+    width: 1.25em;
+    display: block;
+    fill: currentcolor;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.pagination {
+  button {
+    margin-right: 1rem;
+    border: none;
+    width: 36px;
+    height: 36px;
+    &:hover {
+      border: none;
+    }
+  }
+}

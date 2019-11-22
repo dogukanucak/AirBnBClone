@@ -1,0 +1,276 @@
+.header-main {
+  position: relative;
+  img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+
+  h1 {
+    color: $h1-small-screen-text-color;
+    position: absolute;
+    top: -120px;
+    left: 24px;
+  }
+
+  .banner-subtext {
+    display: none;
+  }
+
+  .navbar {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    padding-left: $nav-main-padding-left;
+    padding-top: $nav-main-padding-top;
+
+    .navbar-nav {
+      ul,
+      li {
+        display: none;
+      }
+      @include media-breakpoint-up(lg) {
+        ul,
+        li {
+          display: initial;
+        }
+        li {
+          padding: $nav-main-link-padding;
+          color: $nav-main-link-color;
+          &:hover,
+          &:focus {
+            border-bottom: $nav-main-link-border;
+          }
+          a {
+            color: $white;
+            font-size: $nav-main-link-font-size;
+            font-weight: $nav-main-link-font-weight;
+          }
+        }
+      }
+    }
+  }
+
+  .overlay-content {
+    a {
+      color: $tundora;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    li {
+      margin-top: 1rem;
+    }
+  }
+
+  .card-place-search {
+    position: relative;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .banner-subtext {
+      display: initial;
+      padding: $header-main-link-padding;
+      color: $header-main-link-color;
+      text-align: right;
+    }
+
+    h1 {
+      color: $h1-text-color;
+      position: initial;
+    }
+
+    img {
+      height: 100%;
+    }
+
+    .card-place-search {
+      width: 480px;
+      padding: 32px 32px 24px;
+      position: absolute;
+      top: 10%;
+      left: 120px;
+    }
+  }
+}
+
+.section-explore {
+  height: $section-explore-sm-height;
+  @include media-breakpoint-up(lg) {
+    height: $section-explore-lg-height;
+    min-width: 100%;
+  }
+
+  .card-explore {
+    min-width: 50vw;
+    @include media-breakpoint-up(md) {
+      min-width: initial;
+    }
+  }
+
+  #explore-stays {
+    background-image: url("/assets/img/main/explore/stays.jpg");
+  }
+  #explore-experiences {
+    background-image: url("/assets/img/main/explore/experiences.jpg");
+  }
+  #explore-adventures {
+    background-image: url("/assets/img/main/explore/adventures.jpg");
+  }
+  #explore-restaurants {
+    background-image: url("/assets/img/main/explore/restaurants.jpg");
+  }
+}
+
+.section-animals {
+  .explore-animals-image {
+    min-height: $section-animals-image-min-height;
+    max-height: $section-animals-image-max-height;
+    background-size: cover;
+    background-position-x: 60%;
+    object-fit: fill;
+    background-image: url("/assets/img/main/explore/animals.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media-breakpoint-up(md) {
+      align-items: flex-start;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-left: 120px;
+      margin-right: 120px;
+      border-radius: 12px;
+      position: relative;
+      background: transparent;
+    }
+
+    video {
+      display: none;
+      @include media-breakpoint-up(lg) {
+        display: initial;
+        border-radius: 12px;
+        height: auto;
+        width: 100%;
+      }
+    }
+    .explore-image-caption {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      @include media-breakpoint-up(lg) {
+        left: 4rem;
+        top: 8rem;
+      }
+    }
+    span {
+      font-size: $section-animals-text-font-size;
+      line-height: $section-animals-text-line-height;
+      font-weight: $section-animals-text-font-weight;
+      text-transform: uppercase;
+      color: $section-animals-text-color;
+    }
+    img {
+      height: auto;
+      max-width: $section-animals-banner-max-width;
+      min-width: $section-animals-banner-min-width;
+    }
+    .btn {
+      border-radius: $section-animals-button-border-radius;
+      width: 10rem;
+    }
+  }
+}
+
+.section-placetostay {
+  .banner-container {
+    width: 100%;
+    background-size: cover;
+    object-fit: fill;
+    height: $section-placetostay-banner-container-height-small;
+    background-image: url("/assets/img/main/placetostay/placetostaybannersmall.jpg");
+    .banner-header {
+      height: $section-placetostay-banner-header-height;
+      width: $section-placetostay-banner-header-width;
+    }
+    button {
+      padding: $section-placetostay-button-padding;
+    }
+    @include media-breakpoint-up(md) {
+      background-image: url("/assets/img/main/placetostay/placetostaybanner.jpg");
+      height: $section-placetostay-banner-container-height-medium;
+    }
+    @include media-breakpoint-up(lg) {
+      background-image: url("/assets/img/main/placetostay/placetostaybannerwide.jpg");
+    }
+  }
+}
+
+.section-recomended {
+  #recomended-paris {
+    background-image: url("/assets/img/main/recomended/recomended1.jpg");
+  }
+  #recomended-tokyo {
+    background-image: url("/assets/img/main/recomended/recomended2.jpg");
+  }
+  #recomended-london {
+    background-image: url("/assets/img/main/recomended/recomended3.jpg");
+  }
+  #recomended-los-angeles {
+    background-image: url("/assets/img/main/recomended/recomended4.jpg");
+  }
+  #recomended-barcelona {
+    background-image: url("/assets/img/main/recomended/recomended5.jpg");
+  }
+}
+
+.section-aroundworld {
+  .card-place-detailed {
+    svg {
+      color: $section-aroundworld-rating-icon-color;
+    }
+  }
+}
+
+.section-beach {
+  #beach-sandiego {
+    background-image: url("/assets/img/main/beach/beach1.jpg");
+  }
+  #beach-loscabos {
+    background-image: url("/assets/img/main/beach/beach2.jpg");
+  }
+  #beach-riveramaya {
+    background-image: url("/assets/img/main/beach/beach3.jpg");
+  }
+  #beach-puertovallarta {
+    background-image: url("/assets/img/main/beach/beach4.jpg");
+  }
+  #beach-dominican {
+    background-image: url("/assets/img/main/beach/beach5.jpg");
+  }
+  #beach-puertorico {
+    background-image: url("/assets/img/main/beach/beach6.jpg");
+  }
+}
+
+.section-featured {
+  .carousel-next {
+    top: -15%;
+    position: relative;
+  }
+  .carousel-previous {
+    top: -15%;
+    position: relative;
+  }
+}
+
+.btn-toggle-footer {
+  position: fixed;
+  bottom: 5%;
+  right: 1%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  svg {
+    margin-right: 0.5rem;
+  }
+}

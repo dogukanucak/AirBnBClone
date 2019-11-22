@@ -1,0 +1,33 @@
+.link-green {
+  @include singleLink($link-green-color, $link-green-border-color);
+}
+.show-more-link-green {
+  @include outlinedLink($link-green-color);
+  @include media-breakpoint-up(sm) {
+    @include singleLink($link-green-color, $link-green-border-color);
+  }
+}
+
+.show-more-link-pink {
+  @include outlinedLink($link-pink-color);
+  @include media-breakpoint-up(sm) {
+    @include singleLink($link-pink-color, $link-pink-border-color);
+  }
+}
+
+.badge-new {
+  color: $badge-new-color;
+  background-color: $badge-new-bgcolor;
+}
+
+.badge-plus {
+  color: $badge-plus-color;
+  background-color: $badge-plus-bgcolor;
+  text-transform: uppercase;
+}
+
+.badge-black {
+  color: $black;
+  border: 1px solid $black;
+  text-transform: uppercase;
+}

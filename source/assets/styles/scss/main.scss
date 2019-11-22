@@ -1,0 +1,76 @@
+/***********************************/
+/*        Bootstrap Overrides       */
+/**********************************/
+@import "./abstracts/boostrap-overrides";
+
+/***********************************/
+/*        Bootstrap Imports        */
+/**********************************/
+
+// Required
+@import "./vendors/bootstrap/functions";
+@import "./vendors/bootstrap/variables";
+@import "./vendors/bootstrap/mixins";
+@import "./vendors/bootstrap/transitions";
+
+// Optional
+@import "./vendors/bootstrap/reboot";
+@import "./vendors/bootstrap/type";
+@import "./vendors/bootstrap/images";
+@import "./vendors/bootstrap/code";
+@import "./vendors/bootstrap/grid";
+@import "./vendors/bootstrap/utilities/borders";
+@import "./vendors/bootstrap/utilities/display";
+@import "./vendors/bootstrap/utilities/spacing";
+@import "./vendors/bootstrap/utilities/background";
+@import "./vendors/bootstrap/utilities/text";
+@import "./vendors/bootstrap/utilities/flex";
+@import "./vendors/bootstrap/utilities/sizing";
+@import "./vendors/bootstrap/utilities/position";
+
+// Boostrap Components
+@import "./vendors/bootstrap/buttons";
+@import "./vendors/bootstrap/modal";
+@import "./vendors/bootstrap/badge";
+@import "./vendors/bootstrap/progress";
+@import "./vendors/bootstrap/forms";
+@import "./vendors/bootstrap/nav";
+@import "./vendors/bootstrap/navbar";
+@import "./vendors/bootstrap/carousel";
+
+// Boostrap Mixins
+@import "./vendors/bootstrap/mixins/breakpoints";
+
+/***********************************/
+/*        Project Imports        */
+/**********************************/
+
+/* Abstract */
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/utils";
+
+/* Base */
+@import "./base/base";
+
+/* Layout */
+@import "./layout/layout";
+
+/* Components */
+@import "./components/buttons";
+@import "./components/links";
+@import "./components/images";
+@import "./components/progressbar";
+@import "./components/searchbar";
+@import "./components/cards";
+@import "./components/header";
+@import "./components/rating";
+@import "./components/imagecarousel";
+@import "./components/titles";
+@import "./components/overlay";
+@import "./components/logos";
+@import "./components/footer";
+/* Pages */
+@import "./pages/index";
+@import "./pages/homes";
+@import "./pages/placedetail";

@@ -1,0 +1,17 @@
+.header-section {
+  position: relative;
+  svg {
+    display: none;
+    height: $section-adventure-shevron-height;
+    width: $section-adventure-shevron-width;
+    color: $section-adventure-shevron-color;
+    position: absolute;
+    top: 20px;
+    transition: display 0.8s ease-in;
+  }
+  &:hover {
+    svg {
+      display: initial;
+    }
+  }
+}
