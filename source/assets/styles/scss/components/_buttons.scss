@@ -99,7 +99,7 @@
 }
 
 .pagination {
-  button {
+  button:not(:last-of-type) {
     margin-right: 1rem;
     border: none;
     width: 36px;

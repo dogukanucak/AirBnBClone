@@ -27,7 +27,7 @@
                     </path>
                 </svg>
             </a>
-            <span class="toggleMenuButton" onclick="toggleNav()">
+            <span class="toggleMenuButton" onclick="toggleNav({hasLogo: true})">
                 <svg class="d-inline" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false"
                     style="height: 1em; width: 1em; display: block; fill: currentcolor;">
                     <path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z"
@@ -167,7 +167,7 @@
             <section class="section-animals mt-5">
                 <!-- Animals ( Video Will Be Fixed )-->
                 <div class="explore-animals-image pt-5">
-                    <video src="./assets/img/main/explore/explorevideo.mp4" autoplay></video>
+                    <video controls loop src="./assets/img/main/explore/explorevideo.mp4" autoplay></video>
                     <div class="explore-image-caption">
                         <span>Introducing</span>
                         <img class="mt-4" src="./assets/img/main/explore/animalsbanner.jpg" alt="">
@@ -560,7 +560,7 @@
                 </div>
                 <div id="carousel-featured" class="carousel slide multi-image-carousel" data-ride="carousel"
                     data-interval="false">
-                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                    <div class="carousel-inner row w-100 mx-auto flex-nowrap" role="listbox">
                         <div class="carousel-item card-featured col-12 col-sm-6 col-lg-4 active">
                             <img src="assets/img/main/featured/barcelona.jpg" alt="">
                             <div class="featured-image-caption caption-light">
@@ -745,6 +745,7 @@
     <script src="./assets/js/vendors/jquery-3.2.1.slim.min.js"></script>
     <script src="./assets/js/vendors/popper.min.js"></script>
     <script src="./assets/js/vendors/bootstrap/dist/bootstrap.min.js"></script>
+    <script src="./assets/js/vendors/jquerySwipe.js"></script>
     <script src="./assets/js/imagecareosel.js"></script>
     <script src="./assets/js/overlay.js"></script>
     <script src="./assets/js/collapse.js"></script>

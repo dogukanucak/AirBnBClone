@@ -27,7 +27,19 @@
     }
   }
 
+  .container-carousel {
+    @include media-breakpoint-up(md) {
+      overflow-x: hidden;
+      flex-wrap: nowrap;
+    }
+  }
+
   .image-carousel {
+    @include media-breakpoint-only(lg) {
+      &:last-child {
+        display: none;
+      }
+    }
     img {
       height: 180px;
       width: 100%;

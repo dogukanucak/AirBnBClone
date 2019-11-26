@@ -64,3 +64,7 @@ watcher.attach(enableAttentionSection, 800, watcher.compareMethod.greater);
 watcher.attach(disableAttentionSection, 800, watcher.compareMethod.less);
 watcher.attach(enableNavBar, 800, watcher.compareMethod.greater);
 watcher.attach(disabledNavBar, 800, watcher.compareMethod.less);
+
+$(document).ready(function() {
+  $("#imagelist").carousel();
+});
