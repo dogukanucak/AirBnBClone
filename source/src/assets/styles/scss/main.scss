@@ -8,38 +8,38 @@
 /**********************************/
 
 // Required
-@import "./vendors/bootstrap/functions";
-@import "./vendors/bootstrap/variables";
-@import "./vendors/bootstrap/mixins";
-@import "./vendors/bootstrap/transitions";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/transitions";
 
 // Optional
-@import "./vendors/bootstrap/reboot";
-@import "./vendors/bootstrap/type";
-@import "./vendors/bootstrap/images";
-@import "./vendors/bootstrap/code";
-@import "./vendors/bootstrap/grid";
-@import "./vendors/bootstrap/utilities/borders";
-@import "./vendors/bootstrap/utilities/display";
-@import "./vendors/bootstrap/utilities/spacing";
-@import "./vendors/bootstrap/utilities/background";
-@import "./vendors/bootstrap/utilities/text";
-@import "./vendors/bootstrap/utilities/flex";
-@import "./vendors/bootstrap/utilities/sizing";
-@import "./vendors/bootstrap/utilities/position";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/utilities/borders";
+@import "~bootstrap/scss/utilities/display";
+@import "~bootstrap/scss/utilities/spacing";
+@import "~bootstrap/scss/utilities/background";
+@import "~bootstrap/scss/utilities/text";
+@import "~bootstrap/scss/utilities/flex";
+@import "~bootstrap/scss/utilities/sizing";
+@import "~bootstrap/scss/utilities/position";
 
 // Boostrap Components
-@import "./vendors/bootstrap/buttons";
-@import "./vendors/bootstrap/modal";
-@import "./vendors/bootstrap/badge";
-@import "./vendors/bootstrap/progress";
-@import "./vendors/bootstrap/forms";
-@import "./vendors/bootstrap/nav";
-@import "./vendors/bootstrap/navbar";
-@import "./vendors/bootstrap/carousel";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/carousel";
 
 // Boostrap Mixins
-@import "./vendors/bootstrap/mixins/breakpoints";
+@import "~bootstrap/scss/mixins/breakpoints";
 
 /***********************************/
 /*        Project Imports        */

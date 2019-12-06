@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "path": "D:\\TRAINING\\AirBnBClone\\source"
+    }
+  ],
+
+  "settings": {
+    "workbench.colorTheme": "lucy",
+    "liveSassCompile.settings.formats": [
+      // You can add more
+      {
+        "format": "compressed",
+        "extensionName": ".min.css",
+        "savePath": "/dist"
+      }
+    ],
+    "liveSassCompile.settings.excludeList": ["**/vendors/**"]
+  }
+}

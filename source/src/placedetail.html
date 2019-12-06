@@ -7,7 +7,6 @@
 
     <!-- Main CSS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../dist/main.min.css" />
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/a5b95e0a59.js" crossorigin="anonymous"></script>
     <title>Holiday Lets, Homes, Experiences & Places - Airbnb</title>
@@ -84,24 +83,8 @@
     <main>
         <article>
             <section class="section-placeimages">
-                <ul id="imagelist" class="row">
-                    <li class="mainimage">
-                        <img src="/assets/img/placedetail/hygge/hygeemainsmall.jpg" alt="">
-                    </li>
-                    <li class="col-lg-6">
-                        <img src="/assets/img/placedetail/hygge/hygee1.jpg" alt="">
-                    </li>
-                    <li class="col-lg-6">
-                        <img src="/assets/img/placedetail/hygge/hygee2.jpg" alt="">
-                    </li>
-                    <li class="col-lg-6">
-                        <img src="/assets/img/placedetail/hygge/hygee3.jpg" alt="">
-                    </li>
-                    <li class="col-lg-6">
-                        <img src="/assets/img/placedetail/hygge/hygee4.jpg" alt="">
-                    </li>
-                </ul>
-                <!-- <div class="mainimage">
+
+                <div class="mainimage">
                     <img src="/assets/img/placedetail/hygge/hygeemainsmall.jpg" alt="">
                 </div>
 
@@ -148,7 +131,7 @@
                     <span class="carouseldot"></span>
                     <span class="carouseldot"></span>
                     <span class="carouseldot"></span>
-                </div> -->
+                </div>
                 <div id="overlayMenu" class="overlay">
                     <div class="imagestore py-5">
                         <span onclick="closeNav()" class="closebtn"><svg viewBox="0 0 24 24" role="img"
@@ -739,7 +722,7 @@
                                                         is also truly off the grid, so be prepared to unplug and unwind
                                                         because you won’t be getting WiFi or much phone signal
                                                         inside.</span><a class="link-green"
-                                                        onclick="collapseText($(this))">Read
+                                                        onclick="collapseText(this)">Read
                                                         More</a></p>
                                                 <hr>
                                             </div>
@@ -772,7 +755,7 @@
                                                         well appointed and comfortable. I slept really well and was
                                                         eager to
                                                         take advantage of the amenities like the fireplace.</span><a
-                                                        class="link-green" onclick="collapseText($(this))">Read
+                                                        class="link-green" onclick="collapseText(this)">Read
                                                         More</a>
                                                 </p>
                                                 <hr>
@@ -798,8 +781,7 @@
                                                     recommend
                                                     this to anyone wanting a fun adventure for a night too. I had fun
                                                     carving <span class="dots">...</span> <span class="collapse">my owl.
-                                                        :)</span><a class="link-green"
-                                                        onclick="collapseText($(this))">Read
+                                                        :)</span><a class="link-green" onclick="collapseText(this)">Read
                                                         More</a></p>
                                                 <hr>
                                             </div>
@@ -1190,16 +1172,5 @@
                 </div>
             </div>
         </div>
-
     </footer>
-
-
-    <!-- Optional JavaScript -->
-    <script src="./assets/js/vendors/jquery-3.2.1.slim.min.js"></script>
-    <script src="./assets/js/vendors/popper.min.js"></script>
-    <script src="./assets/js/vendors/bootstrap/dist/bootstrap.min.js"></script>
-    <script src="./assets/js/imagecareosel.js"></script>
-    <script src="./assets/js/collapse.js"></script>
-    <script src="./assets/js/overlay.js"></script>
-    <script src="./assets/js/scrollWatcher.js"></script>
 </body>

@@ -42,11 +42,11 @@ scrollWatcher = function() {
 // Scroll Events
 enableAttentionSection = function() {
   const attention = $(".attention");
-  $(attention).show("slide", { direction: "up" }, 1000);
+  $(attention).show();
 };
 disableAttentionSection = function() {
   const attention = $(".attention");
-  $(attention).hide("slide", { direction: "down" }, 1000);
+  $(attention).hide();
 };
 
 enableNavBar = function() {
@@ -55,7 +55,7 @@ enableNavBar = function() {
 };
 disabledNavBar = function() {
   const navBar = $(".navbar-featured");
-  $(navBar).hide("slide", { direction: "down" }, 1000);
+  $(navBar).hide();
 };
 
 watcher = scrollWatcher();

@@ -1,5 +1,5 @@
 function collapseText($target) {
-  const parent = $target.parent();
+  const parent = $($target).parent();
   const dots = $(parent).find(".dots");
   const collapse = $(parent).find(".collapse");
   collapse.collapse();
@@ -31,3 +31,6 @@ function closeFooter($button, $footer) {
   $($button).html(termsButtonHTML);
   $($footer).addClass("closed");
 }
+
+window.toggleFooter = toggleFooter;
+window.collapseText = collapseText;

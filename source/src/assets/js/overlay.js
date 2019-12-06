@@ -27,3 +27,5 @@ function toggleNav(options) {
     openNav(options);
   }
 }
+
+window.toggleNav = toggleNav;
