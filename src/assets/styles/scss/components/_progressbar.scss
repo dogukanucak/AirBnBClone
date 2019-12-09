@@ -1,0 +1,7 @@
+.progress-review {
+  height: $progress-review-height;
+  background-color: $progress-review-bgcolor;
+  .progress-bar {
+    background-color: $progress-review-bar-color;
+  }
+}

@@ -1,0 +1,220 @@
+.section-placeimages {
+  position: relative;
+  display: flex;
+  img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in;
+    @include media-breakpoint-up(md) {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .mainimage {
+    flex: 1;
+    @include media-breakpoint-only(md) {
+      flex: 2;
+    }
+  }
+  .subimages {
+    display: none;
+    @include media-breakpoint-only(md) {
+      div:nth-last-of-type(-n + 2) {
+        display: none;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      display: flex;
+      flex: 1;
+      padding: 0;
+      img {
+        height: 100%;
+      }
+    }
+  }
+  .mainimage,
+  .subimages > div {
+    border: 2px solid black;
+    overflow: hidden;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  button {
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: initial;
+    }
+  }
+
+  #showphoto {
+    bottom: 2%;
+    right: 2%;
+    position: absolute;
+  }
+  #saveandshare {
+    top: 2%;
+    right: 2%;
+    position: absolute;
+  }
+
+  .carouselcontrols {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+    .carouseldot {
+      margin-right: 0.2rem;
+    }
+  }
+}
+
+.section-placedetail {
+  display: flex;
+  justify-content: center;
+
+  .container-placedetail {
+    .price-check {
+      display: none;
+      @include media-breakpoint-up(lg) {
+        display: block;
+        border: 1px solid $price-check-border-color;
+        top: 10%;
+      }
+      .rating {
+        span {
+          font-size: 0.8rem;
+          font-weight: 500;
+        }
+      }
+      .no-gutters {
+        border: 1px solid $price-check-border-color;
+        input {
+          border: none;
+          &:active,
+          &:focus {
+            background-color: #99ede6;
+          }
+        }
+      }
+    }
+    .placetitle {
+      a {
+        color: $tundora;
+      }
+    }
+    .placecapacity {
+      p {
+        font-size: $placecapacity-title-font-size;
+        color: $placecapacity-title-color;
+      }
+    }
+
+    .place-title {
+      font-size: $place-description-title-font-size;
+      font-weight: $place-description-title-font-weight;
+      color: $place-description-title-color;
+    }
+    .place-text {
+      font-size: $place-description-text-font-size;
+      font-weight: $place-description-text-font-weight;
+      color: $place-description-text-color;
+    }
+
+    .profile-container.main-profile {
+      align-items: flex-end;
+      bottom: 30%;
+      span {
+        text-indent: 0.7rem;
+      }
+      .profile-name {
+        display: none;
+        @include media-breakpoint-up(md) {
+          display: initial;
+        }
+      }
+      @include media-breakpoint-up(md) {
+        align-items: initial;
+        bottom: initial;
+      }
+    }
+
+    .arrangement-list {
+      li {
+        border: 1px solid $arrangement-list-border-color;
+      }
+    }
+
+    .reviews {
+      span {
+        font-size: 1.2rem;
+        color: $tundora;
+      }
+
+      .rating-amount {
+        display: inline-block;
+        border-right: 1px solid $gallery;
+      }
+      .rating-property {
+        font-size: 0.9rem;
+      }
+      .place-comments {
+        span {
+          font-size: 1rem;
+        }
+        .collapse {
+          font-size: inherit;
+          font-weight: inherit;
+          color: inherit;
+        }
+      }
+    }
+    .progress-review {
+      width: 85px;
+    }
+  }
+
+  .attention {
+    // transition: display 1s ease;
+    strong,
+    p {
+      font-size: 0.9rem;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  i {
+    line-height: 1.7rem;
+    margin-right: 0.8rem;
+  }
+  p {
+    color: $tundora;
+    font-weight: 200;
+  }
+  .rating {
+    svg {
+      color: $review-rating-icon-color;
+    }
+  }
+  .link-green {
+    font-size: 18px;
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.neighbourhood,
+.cancelations,
+.exploreoptions {
+  a {
+    color: inherit;
+  }
+}

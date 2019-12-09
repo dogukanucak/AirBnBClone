@@ -1,0 +1,107 @@
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+  visibility: hidden;
+}
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+  visibility: visible;
+}
+
+.carousel.image-carousel:hover > .btn-proceed {
+  display: flex;
+}
+
+.article-homes {
+  .card-explore {
+    border-radius: 0;
+    .card-explore-image-container {
+      border-radius: 0;
+    }
+    .card-explore-text-container {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      .text-muted {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .container-carousel {
+    @include media-breakpoint-up(md) {
+      overflow-x: hidden;
+      flex-wrap: nowrap;
+    }
+  }
+
+  .image-carousel {
+    @include media-breakpoint-only(lg) {
+      &:last-child {
+        display: none;
+      }
+    }
+    img {
+      height: 180px;
+      width: 100%;
+      object-fit: cover;
+    }
+    .btn-proceed {
+      display: none;
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 5%;
+      top: 2%;
+      z-index: 2;
+      width: 1.6rem;
+      height: 1.6rem;
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .place-subtext {
+    h5 {
+      font-size: $place-subtext-fontsize;
+      color: $place-subtext-titlecolor;
+      display: flex;
+      align-items: center;
+    }
+
+    svg {
+      color: $place-subtext-icon-color;
+    }
+    p {
+      color: $mineshaft;
+      font-size: 1rem;
+    }
+    .rating {
+      span {
+        font-size: 0.9rem;
+      }
+    }
+    &.featured {
+      svg {
+        color: $featured-color;
+      }
+    }
+  }
+}
+
+#travel-paris {
+  background-image: url("/assets/img/homes/travelcards/paris.jpg");
+}
+#travel-newyork {
+  background-image: url("/assets/img/homes/travelcards/newyork.jpg");
+}
+
+#travel-syndey {
+  background-image: url("/assets/img/homes/travelcards/syndey.jpg");
+}
+
+#travel-capetown {
+  background-image: url("/assets/img/homes/travelcards/capetown.jpg");
+}
